@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan JQuery 01</title>
+</head>
+<body>
+    
+    <h3> Judul </h3>
+    <div id="tampil1">Isi dari Tampil 1</div>
+    <div class="tampil1">Isi dari class Tampil 1</div>
+
+    <p>isi paragraph</p>
+    <div id="p1">p1</div>
+    <div class="p2">p2</div>
+
+
+    <script src="jquery-3.7.0.min.js"></script>
+    <script>
+        //document.getElementById("tampil1").innerHTML = "Teks Baru";
+
+        $(document).ready(function(){
+            $("#tampil1").html("Diantari Agustini");
+            $(".tampil1").html("Mataram, 23-08-2003");
+            $("h3").html("Biodata");
+            $("p").html("Tentang Saya")
+            $("#p1").html(" Saya adalah manusia ");
+            $(".p2").html(" Saya bisa bernafas ");
+        });
+
+        
+    </script>
+</body>
+</html>
